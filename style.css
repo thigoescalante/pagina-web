@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2? family= Koulen & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Slab&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Roboto+Slab&family=Work+Sans:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+
+:root{
+   --red:#ff0800;
+   --green:#1aff00;
+   --blue:#0012ff;
+   --yellow:#dbff00;
+   --pink:#ff007d;
+   --lightblue:#00d4ff;
+   --orange:#ff6200;
+   --write:#ECE2E4;
+}
+
+header{
+   background-color: rgb(245, 245, 220);
+   display: flex;
+   justify-content: space-around;
+   align-items:center;
+   height: 78px;
+   width: 100%;
+   padding: 25px;
+   border: 2px solid goldenrod;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+.logo img{
+    width: 60px;
+    margin-right: 10px;
+    border: 1px inset rgb(10,70,200);
+}
+
+.logo img:hover{
+    width: 70px;
+margin-right: 5px;
+}
+
+.nombre-marca{
+color: var(--orange);
+font-size: 33px;
+font-family: 'Koulen', cursive;
+}
+
+.nombre-marca:hover{
+color: rgb(10,120,190);
+text-shadow: 1px 5px 9px rgb(19, 156,126);
+}
+
+
+.nav{
+    display:flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.navegador{
+    color: var(--red);
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navegador:hover{
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #65e4a7;
+    width: 100%;
+    height: 340px;
+border: 2px solid rgb(8, 68, 58);
+}
+
+h1{
+     margin-top:10px; 
+    text-align: center;
+    color:var(--red);
+    text-shadow: 2px 3px 7px rgb(179, 118, 155);
+    font-size: 45px;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 7px;
+}
+
+.titulo2{
+    color: rgb(09, 20, 0);
+    background-image: linear-gradient(to right, #FFD700, #7B68EE, #3498db, #2ecc71, #a8a177);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 400%;   
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+@keyframes color {
+    10% {
+        background-position: 0% 50%;
+    }
+
+ 100%{
+        background-position: 100% 50%;
+    }
+}
+
+.imagendata{
+    border-radius: 30px;
+    width: 290px;
+    border: 2px groove rgb(130, 114, 130);
+}
+
+.imagendata:hover{
+    animation-name: imagen;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+}
+
+@keyframes imagen{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.productos{
+height:auto;
+width:100%;
+padding-bottom: 50px;
+display: grid;
+grid-template:200px 200px /250px 250px 250px;
+justify-content:center;
+gap: 35px;
+background-color: #d5e1f3;
+border: 2px groove rgb(177, 109, 109);
+}
+
+.articulos{
+    margin-top:10px;
+height: 220px;
+width: 250px;
+border: 1px solid #ff6200;
+display: flex;
+justify-content:center;
+align-items:flex-start;
+background-color: #85e9e4;
+}
+
+.articulos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulos h2{
+    margin-top: 2px;
+    color: #f00f0f;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.articulos h3{
+    color: rgb(180, 120 ,111);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.articulos p{
+    color: rgb(180,28 ,90);
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.articulos img{
+    margin:2px 0px 3px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulos img:hover{
+ transform: scale(1.1);
+}
+
+.articulos button{
+  color: #8a2e17;
+  font-size: 15px;
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  border: 2px groove #318aac;
+  transition: all 1.3s ease;
+  position: relative;
+  margin: 3px 0px 5px 0px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .articulos button:hover{
+     border: 2px groove red;
+    background-color:#33333b;
+    color: #fff;
+    width: 250px;
+ }
+
+footer{
+    box-shadow: 0px 0px 20px rgb(29, 59, 115) inset;
+    background-color: #6a94a1;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+svg{
+    width: 35px;
+    cursor: pointer;
+}
+
+svg:hover{
+    width: 45px;
+    box-shadow: 3px 5px 6px rgb(158, 176, 184);
+}
+
+.recargar{
+    color: #a85728;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nombre-marca{
+        margin-right: 200px;
+        }
+
+    .nav{
+        justify-content:flex-end;
+        margin-left: 70px;
+    }
+
+    .productos{
+    min-height: 73vh;
+    grid-template:200px 200px/250px 250px;
+    justify-content:center;
+    padding-bottom: 20px;
+  }
+
+  .articulos{
+    height: 220px;
+    width: 190px;
+} 
+}
+
+
